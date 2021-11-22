@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+
+    <title>Signup</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Signup</h1>
+        <form name="registration" class="registartion-form" onsubmit="formValidation()">
+            <div class="form-group">
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                    <span id="firstname_error" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    <span id="lastname_error" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username"
+                        onblur="usernameValidation()">
+                    <span id="username_error" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                        onblur="emailValidation()">
+                    <span id="email_error" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                        onblur="passwordValidation()">
+                    <span id="password_error" class="error"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmpassword" name="confirmpassword"
+                        placeholder="Confirm Password" onblur="confirmPasswordValidation()">
+                    <span id="confirmpassword_error" class="error"></span>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

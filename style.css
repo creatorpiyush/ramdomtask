@@ -1,0 +1,80 @@
+* {
+    margin: 0
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #d3a238;
+}
+
+.container h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin: 27px;
+}
+
+.registartion-form {
+    align-items: center;
+    width: 600px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #154a68;
+    padding: 20px;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+    box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+    border: none;
+    padding: 7.5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.registartion-form .submit {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.registartion-form .submit:hover {
+    box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #6699cc;
+}
+
+.form-group div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 0 0 33.3333%;
+    background-color: #6699cc;
+
+}
+
+.form-group div label,
+.form-group div input,
+.form-group div span {
+    flex: 0 0 33.3333%;
+}
